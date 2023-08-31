@@ -1,0 +1,258 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-08-31T08:30:34.695Z",
+    "end": "2023-08-31T08:30:36.101Z",
+    "duration": 1406
+  },
+  "results": [
+    {
+      "uuid": "a7fa8159-806f-471a-b8aa-6e342b0fbb06",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f08133d8-41f0-4693-84f4-b61747589b0f",
+          "title": "GET all user details",
+          "fullFile": "D:\\Downloads\\MII\\GOREST-Automation-Test\\test\\1-PositiveCases\\2-getUser.js",
+          "file": "\\test\\1-PositiveCases\\2-getUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Response status equal to 200",
+              "fullTitle": "GET all user details Response status equal to 200",
+              "timedOut": false,
+              "duration": 351,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = request(url)\n  .get(`/public/v2/users?access-token=${TOKEN}`)\n  expect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "2e78343b-9e2b-4502-823e-42d6b444d960",
+              "parentUUID": "f08133d8-41f0-4693-84f4-b61747589b0f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e78343b-9e2b-4502-823e-42d6b444d960"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 351,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "011d5018-d1f8-4ca8-b153-d1706918fe3e",
+          "title": "GET selected user details",
+          "fullFile": "D:\\Downloads\\MII\\GOREST-Automation-Test\\test\\1-PositiveCases\\2-getUser.js",
+          "file": "\\test\\1-PositiveCases\\2-getUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Response status equal to 200",
+              "fullTitle": "GET selected user details Response status equal to 200",
+              "timedOut": false,
+              "duration": 279,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = request(url)\n      .get(`/public/v2/users?access-token=${TOKEN}`)\nexpect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "7c622610-0e5f-4578-b427-4a07b352fe5b",
+              "parentUUID": "011d5018-d1f8-4ca8-b153-d1706918fe3e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7c622610-0e5f-4578-b427-4a07b352fe5b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 279,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "d9c8b24e-8f9c-4f5d-aa29-10bc759f9f1c",
+          "title": "GET non-existed user detail",
+          "fullFile": "D:\\Downloads\\MII\\GOREST-Automation-Test\\test\\1-PositiveCases\\2-getUser.js",
+          "file": "\\test\\1-PositiveCases\\2-getUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Response status equal to 404",
+              "fullTitle": "GET non-existed user detail Response status equal to 404",
+              "timedOut": false,
+              "duration": 256,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = request(url)\n.get(`/public/v2/users/12345?access-token=${TOKEN}`)\nexpect((await response).status).to.equal(404)",
+              "err": {},
+              "uuid": "bb70f903-f099-47f9-9d9f-6b6d1d2dfb3f",
+              "parentUUID": "d9c8b24e-8f9c-4f5d-aa29-10bc759f9f1c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bb70f903-f099-47f9-9d9f-6b6d1d2dfb3f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 256,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "901ba6f1-7ef9-4afe-b25c-aa8510d6cb26",
+          "title": "PUT selected user details",
+          "fullFile": "D:\\Downloads\\MII\\GOREST-Automation-Test\\test\\1-PositiveCases\\3-putUser.js",
+          "file": "\\test\\1-PositiveCases\\3-putUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Response status equal to 200",
+              "fullTitle": "PUT selected user details Response status equal to 200",
+              "timedOut": false,
+              "duration": 202,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = request(url)\n  .put(`/public/v2/users/${user}?access-token=${TOKEN}`)\n  .send({\n    \"email\": \"user1@mail.com\",\n    \"name\": \"User 1\",\n    \"gender\": \"female\",\n    \"status\": \"inactive\"\n});\n  expect(( await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "8de3bf4d-0a3d-47f6-b23e-f873a2196880",
+              "parentUUID": "901ba6f1-7ef9-4afe-b25c-aa8510d6cb26",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8de3bf4d-0a3d-47f6-b23e-f873a2196880"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 202,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "ddb5848c-103d-4834-8270-4f700628bc90",
+          "title": "Delete selected user",
+          "fullFile": "D:\\Downloads\\MII\\GOREST-Automation-Test\\test\\1-PositiveCases\\4-deleteUser.js",
+          "file": "\\test\\1-PositiveCases\\4-deleteUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Response status equal to 204",
+              "fullTitle": "Delete selected user Response status equal to 204",
+              "timedOut": false,
+              "duration": 300,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = request(url)\n.delete(`/public/v2/users/${user}?access-token=${TOKEN}`)\nexpect((await response).status).to.equal(204)",
+              "err": {},
+              "uuid": "d9b08a93-31c1-4eae-b75c-25cafb5ebf62",
+              "parentUUID": "ddb5848c-103d-4834-8270-4f700628bc90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9b08a93-31c1-4eae-b75c-25cafb5ebf62"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 300,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "D:\\Downloads\\MII\\GOREST-Automation-Test\\mochawesome-report\\positiveCases"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
