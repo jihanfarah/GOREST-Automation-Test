@@ -13,3 +13,6 @@ Download and install [Node.Js](https://nodejs.org/en) and npm
 5. Install Chai using command `npm install chai --save-dev`
 6. Install SuperTest using command `npm install supertest --save-dev`
 7. Running the project using command `npm run 'test'`
+
+## Test Result
+You can see the test result [here](https://jihanfarah.github.io/GOREST-Automation-Test/mochawesome-report/mochawesome.html)
